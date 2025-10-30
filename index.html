@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Fance Design</title>
+  <link rel="stylesheet" href="newstyle.css"/>
+  <link rel="stylesheet" href="works.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+</head>
+<body>
+  <header>
+    <section class="container nav">
+      <h1 class="logo">FANCE.</h1>
+      <nav>
+        <ul>
+          <li><a href="#Home">Home</a></li>
+          <li><a href="#About">About US</a></li>
+          <li><a href="#Portfolio">Portfolio</a></li>
+          <li><a href="#Blog">Blog</a></li>
+          <li><a href="#Contact">Contact</a></li>
+        </ul>
+      </nav>
+    </section>
+  </header>
+
+  <!--hero image-->
+  <main>
+    <section class="hero">
+      <div class="hero-text">
+        <p>Hello, We Are</p>
+        <h1 class="fancy-title">FANCE DESIGN</h1>
+        <p class="subtext">And <span class="highlight">Trust Us</span>, You Want To <span class="highlight">Hire Us.</span></p>
+      </div>
+    </section>
+    <div class="section-divider"></div>
+
+    <!-- Services Section -->
+    <section class="services-section">
+        <div class="services-header">
+            <div class="services-text">
+                <h2 class="section-title">SERVICES</h2>
+                <p class="services-description">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna.
+                </p>
+                <a href="#" class="btn-view-more">View More</a>
+            </div>
+
+            <div class="services-container">
+                <div class="service-box">
+                    <img src="imgmarketing.jpg" alt="Marketing Icon" class="service-icon">
+                    <div class="service-content">
+                        <h3>MARKETING</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    </div>
+                </div>
+                
+
+                <div class="service-box">
+                    <img src="imgdesign.avif" alt="Design Icon" class="service-icon">
+                    <div class="service-content">
+                        <h3>DESIGN</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    </div>
+                </div>
+
+                <div class="service-box">
+                    <img src="imgdevelopment.avif" alt="Development Icon" class="service-icon">
+                    <div class="service-content">
+                        <h3>DEVELOPMENT</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr class="section-divider">
+    </section>
+
+          
+
+    <!-- Works Section -->
+    <section class="section">
+      <section class="works-container">
+        <section class="works-info">
+          <h2>WORKS</h2>
+          <p>Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium lectorum. Mirum est notare quam littera gothica.
+          </p>
+          <button class="btn-dark">Visit Portfolio</button>
+        </section> 
+        <section class="works-right">
+          <section class="slider" id="slider">
+            <section class="slide">
+              <img src="img2.jpg" alt="Work 1" />
+            </section>
+            <section class="slide">
+              <section class="overlay-slide">
+                <h3>Dribble Basket Balls</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
+                <section class="icons">
+                  <span>🔗</span>
+                  <span>🔍</span>
+                </section>
+              </section>
+            </section>
+            <section class="slide">
+              <img src="img3.jpg" alt="Work 2" />
+            </section>
+            <section class="slide">
+              <img src="img4.jpg" alt="Work 3" />
+            </section>
+            <section class="slide">
+              <img src="img4.jpg" alt="Work 4" />
+            </section>
+            <section class="slide">
+                <img src="img2.jpg" alt="Work 1" />
+            </section>
+            <section class="slide">
+                <img src="img2.jpg" alt="Work 1" />
+            </section>
+          </section>
+          <section class="slider-buttons">
+            <button class="prev" onclick="slidePrev()"><i class="fas fa-chevron-left"></i></button>
+            <span class="slider-dot"></span>
+            <button class="next" onclick="slideNext()"><i class="fas fa-chevron-right"></i></button>
+          </section>
+
+        </section>
+      </section>
+    </section>
+    <section class="section-divider"></section>
+    <!-- JavaScript for Slider -->
+    <script>
+      function slideNext() {
+        const slider = document.getElementById("slider");
+        slider.scrollLeft += 220;
+      }
+
+      function slidePrev() {
+        const slider = document.getElementById("slider");
+        slider.scrollLeft -= 220;
+      }
+    </script>
+
+    <!-- Blog Section -->
+    <section class="blog-testimonials">
+      <section class="blog">
+        <h2 class="section-title">BLOG</h2>
+        <section class="blog-post">
+          <img src="img5.jpg" alt="Blog Image 1">
+          <section class="blog-content">
+            <h3>LOREM IPSUM TITLE <span class="meta">By John Doe | 17.12.2012 | 3 comments</span></h3>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
+            <a href="#" class="read-more">Read more ..</a>
+          </section>
+        </section>
+
+        <section class="blog-post">
+          <img src="img5.jpg" alt="Blog Image 2">
+          <section class="blog-content">
+            <h3>LOREM IPSUM TITLE <span class="meta">By John Doe | 17.12.2012 | 3 comments</span></h3>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
+            <a href="#" class="read-more">Read more ..</a>
+          </section>
+        </section>
+      </section>
+
+      <section class="testimonials">
+        <h2 class="section-title">TESTIMONIALS</h2>
+        <blockquote>
+          <h2>“</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed diam nonummy nibh.</p>
+          <h2>”</h2>
+          <section class="author">
+              <img src="img5.jpg" alt="Person 1">
+              <section>
+                <strong>Janna Doe</strong><br>Web Designer
+              </section>
+          </section>
+        </blockquote>
+
+        <blockquote>
+          <h2>“</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed diam nonummy nibh.</p>
+          <h2>”</h2>
+          <section class="author">
+              <img src="img6.jpg" alt="Person 2">
+              <section>
+                <strong>Janna Doe</strong><br>Web Designer
+              </section>
+          </section>
+        </blockquote>
+      </section>
+      -->
+    </section>
+  </main>
+
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-columns">
+      <div>
+        <h4>SOCIAL PLUGIN</h4>
+        <p>Social icons here</p>
+      </div>
+      <div>
+        <h4>TWITTER</h4>
+        <p>Latest tweets here</p>
+      </div>
+      <div>
+        <h4>FLICKR</h4>
+        <p>Photo thumbnails here</p>
+      </div>
+      <div>
+        <h4>CONTACT</h4>
+        <p>Address: 1600 Some Street, Mountain View, CA 92110</p>
+        <p>Phone: +321 228 4665</p>
+        <p>Email: hello@fence.com</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; FENCE. 2012. All rights reserved. Theme by VinaDesign</p>
+    </div>
+  </footer>
+</body>
+</html>
